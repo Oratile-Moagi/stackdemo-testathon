@@ -1,0 +1,27 @@
+{
+  "name": "stackdemo-testathon",
+  "version": "1.0.0",
+  "description": "BrowserStack Testathon — StackDemo E2E Test Automation Suite (Playwright + TypeScript)",
+  "author": "Testathon Team",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:debug": "npx playwright test --debug",
+    "test:browserstack": "npx browserstack-node-sdk playwright test",
+    "report": "npx playwright show-report",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "browserstack-node-sdk": "^1.30.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
